@@ -1,0 +1,42 @@
+.nav-bar {
+    &__nav-list {
+      /* .nav-bar__nav-list */
+      display: flex;
+      justify-content: flex-end;
+  
+      @media (max-width: 768px) {
+        & {
+          flex-direction: column;
+        }
+      }
+    }
+  
+    &__nav-item {
+      text-align: center;
+      
+    }
+  
+    &__nav-link {
+      display: block;
+      padding: 1rem 2rem;
+    text-decoration: none;
+      font-size: 0.6em;
+      color: black;
+      position: relative;
+      bottom: 30%;
+      height: 25px;
+      
+    
+    }
+  
+    @media (max-width: 768px) {
+      & {
+        /* .nav-bar */
+        display: none;
+      }
+    }
+  }
+
+  .nav-bar__nav-list{
+    list-style-type: none;
+  }
